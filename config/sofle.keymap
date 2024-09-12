@@ -33,11 +33,22 @@
         combo1 {
             bindings = <&kp A>;
             key-positions = <54 4>;
+            layers = <0>;
         };
 
         combo2 {
             bindings = <&kp X>;
             key-positions = <53 5>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>;
+            label = "MACRO1";
         };
     };
 
